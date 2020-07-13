@@ -1,0 +1,22 @@
+#include<stdio.h>
+#include<conio.h>
+void main(){
+	int i=1,f=1,num;
+	clrscr();
+	printf("Enter a number: ");
+	scanf("%d",&num);
+	f=fact(num);
+	printf("\nFactorial of %d is: %d",num,f);
+	getch();
+}
+int fact(int n){
+	if (n==0)
+		return 1;
+	else
+		return(n*fact(n-1));
+}
+
+
+
+
+

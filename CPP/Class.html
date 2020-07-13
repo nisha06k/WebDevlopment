@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="ISO-8859-1">
+	<link href="Programs/CPP.css" rel="stylesheet" type="text/css"  >
+	<title>CPP/CPP-Tutorial/Class and Objects</title>
+	<script type="text/javascript" src="Cpp.js"></script>
+</head>
+<body>
+	<div id="matter"> 
+		<h1>
+			CLASS AND OBJECTS
+		</h1>
+		<hr>
+		<p>The classes are the most important feature of C++ that leads to Object Oriented programming. Class is a user defined data type, which holds its own data members and member functions, which can be accessed and used by creating instance of that class. 
+		</p>
+
+		<p>The variables inside class definition are called as data members and the functions are called member functions.
+		</p>
+
+		<p><b>For example :</b> Class of birds, all birds can fly and they all have wings and  beaks. So here flying is a behavior and wings and beaks are part of their characteristics. And there are many different birds in this class with different names but they all posses this behavior and characteristics.</p>
+
+		<p>Similarly, class is just a blue print, which declares and defines characteristics and behavior, namely data members and member functions respectively. And all objects of this class will share these characteristics and behavior.
+		</p>
+		<h2>More about Classes</h2>
+		<ul style="list-style-image: url('sideimg.jpg'); text-align:  justify;">
+			<li>
+				Class name must start with an uppercase letter. If class name is made of more than one word, then first letter of each word must be in uppercase. <br><i>Example</i>,
+				<pre>class Study, class Am_E_Learing etc</pre>
+			</li>
+			<li>
+				Classes contain, data members and member functions, and the access of these data members and variable depends on the access specifiers.
+			</li>
+			<li>
+				Class's member functions can be defined inside the class definition or outside the class definition.
+			</li>
+			<li>
+				Class in C++ are similar to structures in C, the only difference being, class defaults to private access control, where as structure defaults to public.
+			</li>
+			<li>
+				All the features of OOPS, revolve around classes in C++. Inheritance, Encapsulation, Abstraction etc.
+			</li>
+			<li>
+				Objects of class holds separate copies of data members. We can create as many objects of a class as we need.
+			</li>
+			<li>
+				Classes do posses more characteristics, like we can create abstract classes, immutable classes, all this we will study later. 
+			</li>
+		</ul>
+		<h2>Objects</h2>
+		<p>
+			Class is mere a blueprint or a template. No storage is assigned when we define a class. Objects are instances of class, which holds the data variables declared in class and the member functions work on these class objects. 
+		</p>
+		<p>
+			And whenever the object is out of its scope, another special class member function called <b>Destructor</b> is called, to release the memory reserved by the object. C++ doesn't have Automatic Garbage Collector like in JAVA, in C++ Destructor performs this task.
+		</p>
+		<p>
+			Each object has different data variables. Objects are initialised using special class functions called <b>Constructors</b>. We will study about constructors later.
+		</p>
+		<h2>Classes and Objects in Details</h2>
+		<table id="tab1">
+			<thead>
+				<tr>
+					<th width="50px">S.No</th>
+					<th width="150px" >Concept</th>
+					<th width="450px" >Description </th>
+				</tr>
+			</thead>
+			<tr>
+				<td width="50px">1</td>
+				<td width="150px">Class member functions</td>
+				<td width="450px">A member function of a class is a function that has its definition or its prototype within the class definition like any other variable.</td>
+			</tr>
+			<tr>
+				<td width="50px">2</td>
+				<td width="150px">Class access modifiers</td>
+				<td width="450px">A class member can be defined as public, private or protected. By default members would be assumed as private.</td>
+			</tr>
+			<tr>
+				<td width="50px">3</td>
+				<td width="150px">Constructor & destructor</td>
+				<td width="450px">A class constructor is a special function in a class that is called when a new object of the class is created. A destructor is also a special function which is called when created object is deleted.</td>
+			</tr>
+			<tr>
+				<td width="50px">4</td>
+				<td width="150px">C++ copy constructor</td>
+				<td width="450px">The copy constructor is a constructor which creates an object by initializing it with an object of the same class, which has been created previously.</td>
+			</tr>
+			<tr>
+				<td width="50px">5</td>
+				<td width="150px">C++ friend functions</td>
+				<td width="450px">A friend function is permitted full access to private and protected members of a class.</td>
+			</tr>
+			<tr>
+				<td width="50px">6</td>
+				<td width="150px">C++ inline functions</td>
+				<td width="450px">With an inline function, the compiler tries to expand the code in the body of the function in place of a call to the function.</td>
+			</tr>
+			<tr>
+				<td width="50px">7</td>
+				<td width="150px">The this pointer in C++</td>
+				<td width="450px">Every object has a special pointer this which points to the object itself.</td>
+			</tr>
+			<tr>
+				<td width="50px">8</td>
+				<td width="150px">Pointer to C++ classes</td>
+				<td width="450px">A pointer to a class is done exactly the same way a pointer to a structure is. In fact a class is really just a structure with functions in it.</td>
+			</tr>
+			<tr>
+				<td width="50px">9</td>
+				<td width="150px">Static members of a class</td>
+				<td width="450px">Both data members and function members of a class can be declared as static.</td>
+			</tr>
+		</table>
+		<hr>
+		<div style="float: right;">
+			<button id="nextbutton" onclick="javascript: window.open('Constructors.html','_self');" onmouseover="this.style.color='black';" onmouseout="this.style.color='#3399FF';" >
+				<b>Next  &rArr;</b>
+			</button> 
+		</div>	
+		<div style="float: right; margin-right: 12%;">
+			<button id="printpreview" onclick="javascript: window.open('Class.html');" onmouseover="this.style.color='black';" onmouseout="this.style.color='#3399FF';" >
+				<b>Print Preview</b>
+			</button> 
+		</div>
+		<div style="float: left;">
+			<button id="nextbutton" onclick="javascript: window.open('Strings.html','_self');" onmouseover="this.style.color='black';" onmouseout="this.style.color='#3399FF';" >
+				<b>&lArr;  Previous</b>
+			</button> 
+		</div>
+	</div>
+</body>
+</html>

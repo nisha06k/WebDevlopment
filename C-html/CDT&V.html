@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="ISO-8859-1">
+	<link href="Programs/CP.css" rel="stylesheet" type="text/css"  >
+	<title>C/C-Tutorial/Data Types and Variables</title>
+	<script type="text/javascript" src="C.js"></script>
+</head>
+
+<body>
+	<div id="matter"> 
+		<h1>
+			DATA TYPES AND VARIABLES
+		</h1>
+		<hr>
+		<h2>
+			Data Types
+		</h2>
+		<p>
+			In C programming language there are many predefined set of data types. They are used for declaring variables or functions of different types and they are defined as the data storage format that a variable can store a data to perform a specific operation. 
+		</p>
+		<table id="tab1">
+			<thead>
+				<tr>
+					<th width="50px">S.No</th>
+					<th width="150px">Data Type</th>
+					<th width="150px" >type</th>
+					<th width="300" >Explanation</th>
+				</tr>
+			</thead>
+			<tr>
+				<td>1</td>
+				<td>Basics types</td>
+				<td>int, char, double and float</td>
+				<td>They are arithmetic types.</td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>Enumerated types</td>
+				<td>enum</td>
+				<td>Enumeration data type consists of named integer constants as a list. It will be discussed later.</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>Void type</td>
+				<td>void</td>
+				<td>Void is an empty data type that has no value.</td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td>Derived type</td>
+				<td>pointer, array, structure, union</td>
+				<td>Array, pointer, structure and union are called derived data type in C language.</td>
+			</tr>
+		</table>
+		<br>
+		<h2>Enumeration </h2>
+		<p>
+			An enum(Enumeration) is a user-defined type consisting of a set of named constants called enumerators.It start with 0 (zero) by default and value is incremented by 1 for the sequential identifiers in the list.
+		</p>
+		<p>
+			Enum syntax in C is shown below with an sample example.
+		</p>
+		<code>enum identifier [optional{ enumerator-list }];</code>
+		<h3>Sample Program :</h3>
+		<div  class="code">
+			<img id="code" src="Programs/CEnumeration.jpg" >
+		</div>
+		<h3>Sample Output :</h3>
+		<pre>
+		9
+		1
+		12
+		4
+		6
+		2
+		</pre>
+		<h4>
+			Click <a href="Programs/CEnumeration.c" download="CHelloWorld.c"> Download</a> for source code.
+		</h4>	
+		<hr>
+		<h2>Variables</h2>
+		<p>
+			C variable is a named location in a memory where a program can manipulate the data. This location is used to hold the value of the variable.The value of the C variable may get change in the program.Each variable in C has a specific type, which determines the size and layout of the variable's memory, the range of values that can be stored within that memory and the set of operations that can be applied to the variable.
+		</p>		
+		<p>
+			Below table show some types and there sizes with ranges.
+		</p>
+		<table id="tab1">
+			<thead>
+				<tr>
+					<th width="50px">S.No</th>
+					<th width="100px">Data Type</th>
+					<th width="100px" >Size (bytes)</th>
+					<th width="150px" >Range</th>
+					<th width="250px">Explanation</th>
+				</tr>
+			</thead>
+			<tr>
+				<td>1</td>
+				<td>char</td>
+				<td>1</td>
+				<td>-127 to 127</td>
+				<td>Typically a single octet(one byte). This is an integer type.</td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>int</td>
+				<td>2</td>
+				<td>-32,767 to 32,767</td>
+				<td>The most natural size of integer for the machine.</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>float</td>
+				<td>4</td>
+				<td>1E-37 to 1E+37 with six digits of precision.</td>
+				<td>A single-precision floating point value.</td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td>double</td>
+				<td>8</td>
+				<td>1E-37 to 1E+37 with ten digits of precision</td>
+				<td>A double-precision floating point value.</td>
+			</tr>
+		</table>
+		<p>
+			A variable definition specifies a data type and contains a list of one or more variables of that type and its definition means to tell the compiler where and how much to create the storage for the variable. Variables can be initialized (assigned an initial value) in their declaration. The initializer consists of an equal sign followed by a constant expression.
+		</p>
+		<p>
+			Basic syntax of variable definition is show below:
+		</p>
+		<code>type variable_list1,variable list2=0;</code>
+		<br>
+		<code>int i,j=2;</code>
+		<br>
+		<code>char x="AmiELeaning",y;</code>
+		<hr>
+		<div style="float: right;">
+			<button id="nextbutton" onclick="javascript: window.open('CK&I.html','_self');" onmouseover="this.style.color='black';" onmouseout="this.style.color='#3399FF';" >
+				<b>Next  &rArr;</b>
+			</button> 
+		</div>	
+		<div style="float: right; margin-right: 12%;">
+			<button id="printpreview" onclick="javascript: window.open('CDT&V.html');" onmouseover="this.style.color='black';" onmouseout="this.style.color='#3399FF';" >
+				<b>Print Preview</b>
+			</button> 
+		</div>
+		<div style="float: left;">
+			<button id="nextbutton" onclick="javascript: window.open('CBasicSyntax.html','_self');" onmouseover="this.style.color='black';" onmouseout="this.style.color='#3399FF';" >
+				<b>&lArr;  Previous</b>
+			</button> 
+		</div>
+	</div>
+</body>
+</html>

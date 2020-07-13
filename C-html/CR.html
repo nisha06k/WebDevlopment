@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="ISO-8859-1">
+	<link href="Programs/CP.css" rel="stylesheet" type="text/css"  >
+	<title>C/C-Tutorial/Recursion</title>
+	<script type="text/javascript" src="C.js"></script>
+</head>
+
+<body>
+	<div id="matter"> 
+		<h1>
+			RECURSION
+		</h1>
+		<hr>
+		<p>Recursion is the process of repeating items in a self-similar way. Same applies in programming languages as well where if a programming allows you to call a function inside the same function that is called recursive call of the function as follows.</p>
+		<pre>
+void recursion()
+{
+   recursion(); /* function calls itself */
+}
+
+int main()
+{
+   recursion();
+}
+		</pre>
+		<p>The C programming language supports recursion, i.e., a function to call itself. But while using recursion, programmers need to be careful to define an exit condition from the function, otherwise it will go in infinite loop.</p>
+		<p>Recursive function are very useful to solve many mathematical problems like to calculate factorial of a number, generating Fibonacci series, etc.</p>
+		<hr>
+		<div style="float: right;">
+			<button id="nextbutton" onclick="javascript: window.open('CIS.html','_self');" onmouseover="this.style.color='black';" onmouseout="this.style.color='#3399FF';" >
+				<b>Next  &rArr;</b>
+			</button> 
+		</div>	
+		<div style="float: right; margin-right: 12%;">
+			<button id="printpreview" onclick="javascript: window.open('CR.html');" onmouseover="this.style.color='black';" onmouseout="this.style.color='#3399FF';" >
+				<b>Print Preview</b>
+			</button> 
+		</div>
+		<div style="float: left;">
+			<button id="nextbutton" onclick="javascript: window.open('CCF','_self');" onmouseover="this.style.color='black';" onmouseout="this.style.color='#3399FF';" >
+				<b>&lArr;  Previous</b>
+			</button> 
+		</div>
+	</div>
+</body>
+</html>

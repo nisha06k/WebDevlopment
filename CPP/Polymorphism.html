@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="ISO-8859-1">
+	<link href="Programs/CPP.css" rel="stylesheet" type="text/css"  >
+	<title>CPP/CPP-Tutorial/Polymorphism</title>
+	<script type="text/javascript" src="Cpp.js"></script>
+</head>
+<body>
+	<div id="matter"> 
+		<h1>
+			POLYMORPHISM
+		</h1>
+		<hr>
+		<p>In C++, a pointer variable of a base class type can point to an object of its derived class. There are situations when this feature of C++ can be used to develop generic code for a variety of applications.</p>
+		<h2>Pointers to base class</h2>
+		<p>        Consider the following program to understand pointer compatibility property</p>
+		<div  class="code">
+			<img id="code" src="Poly.jpg" >
+		</div>
+		<p>        Notice that even though rectPtr is poining to rect (object of type Rectangle), when the program executes, the statement sets length and width of rectangle. If you tried to access area function of class Rectangle with sPtr it will give you compiler error.</p>
+		<pre>sPtr<span class="operator"> -&gt;</span> area<span class="operator">()</span></pre>
+		<p>is a compiler error !</p>
+		<p>It means <strong>base class pointer can not access the additional member function of its derived class</strong>. If we want to do this we need to type cast the base class pointer. </p>
+		<h2>Virtual Function</h2>
+		<p>
+			A member of a class that can be redefined in its derived classes is known as a virtual member. In order to declare  a member of a class as virtual, we must precede its declaration with the keyword virtual.  The member function area() has been declared as virtual in the base class because it is later redefined in each<br>
+  			derived class. <strong>The advantage of having virtual function is that we are able to access </strong>area<strong> function of derived class by pointer variable of base class.</strong>
+  		</p>
+  		<h2>Pure virtual Function and Abstract Class</h2>
+  		<p>A pure virtual function is sometimes called an abstract function, and a class with at least one pure virtual function is called an abstract class. The C++ compiler will not allow you to instantiate an abstract class. Abstract classes can only be subclassed: that is, you can only use them as base classes from which to derive other classes.</p>
+		<pre><span class="keyword">virtual</span><span class="type"> double</span> area<span class="operator">() =</span><span class="int"> 0</span><span class="operator">;</span></pre>
+		<p>A class derived from an abstract class inherits all functions in the base class, and will itself be an abstract class unless it overrides all the abstract functions it inherits. The usefulness of abstract classes lies in the fact that they define an interface that will then have to be supported by objects of all classes derived from it.</p>
+		<hr>
+		<div style="float: right;">
+			<button id="nextbutton" onclick="javascript: window.open('Overloading.html','_self');" onmouseover="this.style.color='black';" onmouseout="this.style.color='#3399FF';" >
+				<b>Next  &rArr;</b>
+			</button> 
+		</div>	
+		<div style="float: right; margin-right: 12%;">
+			<button id="printpreview" onclick="javascript: window.open('Polymorphism.html');" onmouseover="this.style.color='black';" onmouseout="this.style.color='#3399FF';" >
+				<b>Print Preview</b>
+			</button> 
+		</div>
+		<div style="float: left;">
+			<button id="nextbutton" onclick="javascript: window.open('Inheritance.html','_self');" onmouseover="this.style.color='black';" onmouseout="this.style.color='#3399FF';" >
+				<b>&lArr;  Previous</b>
+			</button> 
+		</div>
+	</div>
+</body>
+</html>

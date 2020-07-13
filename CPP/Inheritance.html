@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="ISO-8859-1">
+	<link href="Programs/CPP.css" rel="stylesheet" type="text/css"  >
+	<title>CPP/CPP-Tutorial/Inheritance</title>
+	<script type="text/javascript" src="Cpp.js"></script>
+</head>
+<body>
+	<div id="matter"> 
+		<h1>
+			INHERITANCE
+		</h1>
+		<hr>
+		<p>
+			The mechanism that allows us to extend  the definition of a class without making any physical changes to the existing  class is inheritance.
+		</p>
+		<p>
+			Inheritance lets you create new classes  from existing class. Any new class that you create from an existing class is  called <strong>derived class</strong>; existing class  is called <strong>base class</strong>.
+		</p>
+		<p>
+			The inheritance relationship enables a  derived class to inherit features from its base class. Furthermore, the derived  class can add new features of its own. Therefore, rather than create completely  new classes from scratch, you can take advantage of inheritance and reduce  software complexity.
+		</p>
+		<h2>Forms of Inheritance</h2>
+		<p>
+			<strong>Single Inheritance:</strong>&nbsp;It  is the inheritance hierarchy wherein one derived class inherits from one base  class.<br>
+ 			<strong>Multiple Inheritance: </strong>It is the inheritance hierarchy wherein  one derived class inherits from multiple base class(es)<br>
+  			<strong>Hierarchical  Inheritance:</strong>&nbsp;It is the inheritance hierarchy wherein multiple  subclasses inherit from one base class.<br>
+  			<strong>Multilevel  Inheritance:&nbsp;</strong>It is the inheritance hierarchy wherein  subclass acts as a base class for other classes.<br>
+  			<strong>Hybrid Inheritance: </strong>The inheritance hierarchy that reflects any legal  combination of other four types of inheritance.<br>
+		</p>
+		<div  class="code">
+			<img id="code" src="inheritance.png" >
+		</div>
+		<p>In order to derive a class from  another, we use a colon (:) in the declaration of the derived class using the following  format :</p>
+		<pre>class derived_class: memberAccessSpecifier base_class
+		{ 
+			... 
+		};
+		</pre>
+		<p>Where derived_class is the name of the  derived class and base_class is the name of the class on which it is based. The  member Access Specifier may be public, protected or private. This access specifier describes the access  level for the members that are inherited from the base class.</p>
+		<table id="tab1">
+			<thead>
+				<tr>
+					<th width="150px" colspan="1"> </th>
+					<th width="450px" colspan="3" >Access Control Specifier</th>
+				</tr>
+				<tr>
+					<th width="150px" colspan="1"> Base Class Member</th>
+					<th width="150px"  >Public</th>
+					<th width="150px"  >Private</th>
+					<th width="150px"  >Protected</th>
+				</tr>
+			</thead>
+			<tr>
+				<td>Private</td>
+				<td>Private</td>
+				<td>Private</td>
+				<td>Private</td>
+			</tr>
+			<tr>
+				<td>Protected</td>
+				<td>Protected</td>
+				<td>Private</td>
+				<td>Protected</td>
+			</tr>
+			<tr>
+				<td>Public</td>
+				<td>Public</td>
+				<td>Private</td>
+				<td>Protected</td>
+			</tr>
+		</table>
+		<h2>Virtual Base Class</h2>
+		<p><br>
+  			Multipath inheritance may lead to duplication of  inherited members from a grandparent base class. This may be avoided by making  the common base class a virtual base class. When a class is made a virtual base  class, C++ takes necessary care to see that only one copy of that class is  inherited.
+  		</p>
+  		<pre>class A
+{
+	.....
+	.....
+};
+
+class B1 : virtual public A 
+{
+	.....
+	.....
+};
+
+class B2 : virtual public A
+{
+	.....
+	.....
+};
+
+class C : public B1, public B2
+{
+	.....// only one copy of A
+	.....// will be inherited
+};
+</pre>
+		<hr>
+		<div style="float: right;">
+			<button id="nextbutton" onclick="javascript: window.open('Polymorphism.html','_self');" onmouseover="this.style.color='black';" onmouseout="this.style.color='#3399FF';" >
+				<b>Next  &rArr;</b>
+			</button> 
+		</div>	
+		<div style="float: right; margin-right: 12%;">
+			<button id="printpreview" onclick="javascript: window.open('Inheritance.html');" onmouseover="this.style.color='black';" onmouseout="this.style.color='#3399FF';" >
+				<b>Print Preview</b>
+			</button> 
+		</div>
+		<div style="float: left;">
+			<button id="nextbutton" onclick="javascript: window.open('Constructors.html','_self');" onmouseover="this.style.color='black';" onmouseout="this.style.color='#3399FF';" >
+				<b>&lArr;  Previous</b>
+			</button> 
+		</div>
+	</div>
+</body>
+</html>

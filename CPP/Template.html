@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="ISO-8859-1">
+	<link href="Programs/CPP.css" rel="stylesheet" type="text/css"  >
+	<title>CPP/CPP-Tutorial/Templates</title>
+	<script type="text/javascript" src="Cpp.js"></script>
+</head>
+<body>
+	<div id="matter"> 
+		<h1>
+			TEMPLATES
+		</h1>
+		<hr>
+		<p>
+			A template can be used to create a family of classes or functions. For example, a class template for an array class would enable us to create arrays of various data types such as int array and float array. A template can be considered as a kind of macro. When an object of a specific type is defined for actual use, the template definition for that class is substituted with the required data type. Since a template is defined with a parameter that would be replaced by a specified data type at the time of actual use of the class or function, the templates are sometimes called parameterized classes or functions.
+			<br>Templates are the foundation of generic programming, which involves writing code in a way that is independent of any particular type.
+			<br>A template is a blueprint or formula for creating a generic class or a function. The library containers like iterators and algorithms are examples of generic programming and have been developed using template concept.
+			<br>There is a single definition of each container, such as vector, but we can define many different kinds of vectors for example,<b>vector <int> or vector <string></b> .
+		</p>
+		<h3>Function Template</h3>
+		<p>
+			The general form of a template function definition is shown here:
+		</p>
+			<pre> 
+			template <class type> ret-type func-name(parameter list)
+			{
+				   // body of function
+			} 
+			</pre>
+		<p>
+			Here, type is a placeholder name for a data type used by the function. This name can be used within the function definition.	
+		</p>
+		<h3>Class Template</h3>
+		<p>Just as we can define function templates, we can also define class templates. The general form of a generic class declaration is shown here:</p>
+		<code>template <class type> class class-name {<br>.<br>.<br>}
+		</code>
+		<p>Here, type is the placeholder type name, which will be specified when a class is instantiated. You can define more than one generic data type by using a comma-separated list.</p>
+		<hr>
+		<div style="float: right; margin-right: 12%;">
+			<button id="printpreview" onclick="javascript: window.open('Template.html');" onmouseover="this.style.color='black';" onmouseout="this.style.color='#3399FF';" >
+				<b>Print Preview</b>
+			</button> 
+		</div>
+		<div style="float: left;">
+			<button id="nextbutton" onclick="javascript: window.open('Ehandling.html','_self');" onmouseover="this.style.color='black';" onmouseout="this.style.color='#3399FF';" >
+				<b>&lArr;  Previous</b>
+			</button> 
+		</div>
+	</div>
+</body>
+</html>

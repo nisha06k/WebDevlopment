@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="ISO-8859-1">
+	<link href="Programs/CP.css" rel="stylesheet" type="text/css"  >
+	<title>C/C-Tutorial/Character and string array</title>
+	<script type="text/javascript" src="C.js"></script>
+</head>
+
+<body>
+	<div id="matter"> 
+		<h1>
+			Character and string array 
+		</h1>
+		<hr>
+		<p>
+		<b>string</b> is a sequence of characters that is treated as a single data item and terminated by null character <code>'\0'</code>. Remember that C language does not support strings as a data type. A <b>string</b> is actually one-dimensional array of characters in C language. These are often used to create meaningful and readable programs.</p>
+		<p><b>For example : </b>The string "hello world" contains 12 characters including <code>'\0'</code> character which is automatically added by the compiler at the end of the string.</p>
+		<p>There are different ways to initialize a character array variable.</p>
+		<pre>
+		char name[10]="AM E-Learing";   <font color="green">//valid character array initialization</font>
+
+		char name[10]={'L','e','s','s','o','n','s','\0'};    <font color="green">//valid initialization</font>
+</pre>
+		<p>Remember that when you initialize a character array by listings all its characters separately then you must supply the <code>'\0'</code> character explicitly. 
+		</p>
+		<p>C++ supports a wide range of functions that manipulate null-terminated strings:</p>
+		<table id="tab1">
+			<thead>
+				<tr>
+					<th width="50px">S.No</th>
+					<th width="200px">Function</th>
+					<th width="400px" >Description</th>
+				</tr>
+			</thead>
+			<tr>
+				<td>1</td>
+				<td>strcpy(s1, s2);</td>
+				<td>Copies string s2 into string s1.</td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>strcat(s1, s2);</td>
+				<td>Concatenates string s2 onto the end of string s1.</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>strlen(s1);</td>
+				<td>Returns the length of string s1.</td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td>strcmp(s1, s2);</td>
+				<td>Returns 0 if s1 and s2 are the same; less than 0 if s1<s2; greater than 0 if s1>s2.</td>
+			</tr>
+			<tr>
+				<td>5</td>
+				<td>strchr(s1, ch);</td>
+				<td>Returns a pointer to the first occurrence of character ch in string s1.</td>
+			</tr>
+			<tr>
+				<td>6</td>
+				<td>strstr(s1, s2);</td>
+				<td>Returns a pointer to the first occurrence of string s2 in string s1.</td>
+			</tr>
+		</table>
+		<hr>
+		<div style="float: right;">
+			<button id="nextbutton" onclick="javascript: window.open('CIF.html','_self');" onmouseover="this.style.color='black';" onmouseout="this.style.color='#3399FF';" >
+				<b>Next  &rArr;</b>
+			</button> 
+		</div>	
+		<div style="float: right; margin-right: 12%;">
+			<button id="printpreview" onclick="javascript: window.open('CSA.html');" onmouseover="this.style.color='black';" onmouseout="this.style.color='#3399FF';" >
+				<b>Print Preview</b>
+			</button> 
+		</div>
+		<div style="float: left;">
+			<button id="nextbutton" onclick="javascript: window.open('CArray2.html','_self');" onmouseover="this.style.color='black';" onmouseout="this.style.color='#3399FF';" >
+				<b>&lArr;  Previous</b>
+			</button> 
+		</div>
+	</div>
+</body>
+</html>

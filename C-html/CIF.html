@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="ISO-8859-1">
+	<link href="Programs/CP.css" rel="stylesheet" type="text/css"  >
+	<title>C/C-Tutorial/Character and string array</title>
+	<script type="text/javascript" src="C.js"></script>
+</head>
+
+<body>
+	<div id="matter"> 
+		<h1>
+			INTRODUCTION TO FUNCTION 
+		</h1>
+		<hr>
+		<p style="text-align:  justify;">
+			A function is a subprogram that acts on data and often returns a value. The most important reason to use functions is to make program handling easier as only a small part of the program is dealt with at a time, thereby avoiding ambiguity. Another reason to use functions is to reduce program size. Functions make a program more readable and understandable. Every C++ program has at least  one function, which is main( ) where execution of any program takes place.		
+		</p>
+		<p>C functions can be classified into two categories,</p>
+		<p><b>Library functions</b> are those functions which are defined by C library, example <b>printf()</b>, <b>scanf()</b>, <b>strcat()</b> etc. You just need to include appropriate header files to use these functions. These are already declared and defined in C libraries.</p>
+		<p><b>User-defined functions</b> are those functions which are defined by the user at the time of writing program. Functions are made for code reusability and for saving time and space.</p>
+				
+		<h2>Defining a function</h2>
+		<p style="text-align:  justify;">
+			The general form of a C function definition is as follows:
+				<br><code>return_type function_name (parameter list){<br>Body of the function<br>}</code><br>A C function definition consists of a function header and a function body.<br> Here are all the parts of a function:
+		</p>
+		<ul style="list-style-image: url('sideimg.jpg'); text-align:  justify;">
+			
+			<li><b>Return Type:</b> A function may return a value. The return_type is the data type of the value the function returns. Some functions perform the desired operations without returning a value. In this case, the return_type is the keyword void.</li>
+			<li><b>Function Name:</b> This is the actual name of the function. The function name and the parameter list together constitute the function signature.</li>
+			<li><b>Parameters:</b> A parameter is like a placeholder. When a function is invoked, you pass a value to the parameter. This value is referred to as actual parameter or argument. The parameter list refers to the type, order, and number of the parameters of a function. Parameters are optional; that is, a function may contain no parameters.</li>
+			<li><b>Function Body:</b> The function body contains a collection of statements that define what the function does.</li>
+		</ul>
+		<h2>Function Declaration</h2>
+		<p style="text-align:  justify;">
+			A function declaration tells the compiler about a function name and how to call the function. The actual body of the function can be defined separately.
+			<br>A function declaration has the following parts:
+			<br><code>return_type function_name( parameter list );</code>
+			<br>For the above defined function max(), following is the function declaration:
+			<br><code>int max(int num1, int num2);</code>
+			<br>Parameter names are not important in function declaration only their type is required, so following is also valid declaration:
+			<br><code>int max(int, int);</code>
+			<br>Function declaration is required when you define a function in one source file and you call that function in another file. In such case, you should declare the function at the top of the file calling the function.
+				
+		</p>
+		<h2>Calling a function</h2>
+		<p style="text-align:  justify;">
+			Functions are called by their names. If no arguments are passed it can be called simply by its name. But for functions with arguments it can be called in two ways:
+		</p>
+		<table id="tab1">
+			<thead>
+				<tr>
+					<th width="50px">S.No</th>
+					<th width="200px">Call Type</th>
+					<th width="400px" >Description</th>
+				</tr>
+			</thead>
+			<tr>
+				<td>1</td>
+				<td>Call by Value</td>
+				<td>This method copies the actual value of an argument into the formal parameter of the function. In this case, changes made to the parameter inside the function have no effect on the argument.</td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>Call by Reference</td>
+				<td>This method copies the reference of an argument into the formal parameter. Inside the function, the reference is used to access the actual argument used in the call. This means that changes made to the parameter affect the argument.</td>
+			</tr>
+		</table>
+		<p><b>By default, C uses call by value to pass arguments.</b>
+		</p>
+		<h2>Functions Arguments</h2>
+		<p style="text-align:  justify;">
+			If a function is to use arguments, it must declare variables that accept the values of the arguments. These variables are called the formal parameters of the function.
+The formal parameters behave like other local variables inside the function and are created upon entry into the function and destroyed upon exit.
+			
+		</p>
+		<hr>
+		<div style="float: right;">
+			<button id="nextbutton" onclick="javascript: window.open('CCF.html','_self');" onmouseover="this.style.color='black';" onmouseout="this.style.color='#3399FF';" >
+				<b>Next  &rArr;</b>
+			</button> 
+		</div>	
+		<div style="float: right; margin-right: 12%;">
+			<button id="printpreview" onclick="javascript: window.open('CIF.html');" onmouseover="this.style.color='black';" onmouseout="this.style.color='#3399FF';" >
+				<b>Print Preview</b>
+			</button> 
+		</div>
+		<div style="float: left;">
+			<button id="nextbutton" onclick="javascript: window.open('CSA.html','_self');" onmouseover="this.style.color='black';" onmouseout="this.style.color='#3399FF';" >
+				<b>&lArr;  Previous</b>
+			</button> 
+		</div>
+	</div>
+</body>
+</html>

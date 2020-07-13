@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="ISO-8859-1">
+	<link href="Programs/CPP.css" rel="stylesheet" type="text/css"  >
+	<title>CPP/CPP-Tutorial/File Handling</title>
+	<script type="text/javascript" src="Cpp.js"></script>
+</head>
+<body>
+	<div id="matter"> 
+		<h1>
+			FILE HANDLING
+		</h1>
+		<hr>
+		<p><strong>File. </strong>The information / data  stored under a specific name on a storage device, is called a file.</p>
+		<p><strong>Stream.</strong> It refers to a  sequence of bytes.</p>
+		<p><strong>Text file.</strong> It is a file that  stores information in ASCII characters. In text files, each line of text is  terminated with a special character known as EOL (End of Line) character or  delimiter character. When this EOL character is read or written, certain  internal translations take place.</p>
+		<p><strong>Binary file.</strong> It is a file that contains information in the same format as it is held in memory.  In binary files, no delimiters are used for a line and no translations occur  here.&nbsp;&nbsp;&nbsp;&nbsp; </p>
+		<h3>Classes for file  stream operation </h3>
+		<p>
+			 <strong>ofstream</strong>:  Stream class to write on files<br>
+   			 <strong>ifstream</strong>:  Stream class to read from files<br>
+    		 <strong>fstream:</strong> Stream class to both read and write from/to files. 
+    	</p>
+    	<h3>Opening a File</h3>
+    	<p><strong>OPENING FILE USING CONSTRUCTOR</strong><br>
+  			ofstream outFile("sample.txt");&nbsp;&nbsp;&nbsp; //output only<br>
+ 			ifstream inFile("sample.txt");&nbsp; //input only
+ 		</p>
+  		<p><strong>OPENING FILE USING open()</strong><br>
+  			  Stream-object.open("filename", mode)
+  		</p>
+		<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ofstream outFile;<br>
+  			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; outFile.open("sample.txt");<br>
+ 			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br>
+  			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ifstream inFile;<br>
+  			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; inFile.open("sample.txt");
+  		</p>
+  		<table id="tab1">
+			<thead>
+				<tr>
+					<th width="50px">S.No</th>
+					<th width="150px" >Mode Flag</th>
+					<th width="450px" >Description </th>
+				</tr>
+			</thead>
+			<tr>
+				<td width="50px">1</td>
+				<td width="150px">ios::app</td>
+				<td width="450px">Append mode. All output to that file to be appended to the end.</td>
+			</tr>
+			<tr>
+				<td width="50px">2</td>
+				<td width="150px">ios::ate</td>
+				<td width="450px">Open a file for output and move the read/write control to the end of the file.</td>
+			</tr>
+			<tr>
+				<td width="50px">3</td>
+				<td width="150px">ios::in</td>
+				<td width="450px">Open a file for reading.</td>
+			</tr>
+			<tr>
+				<td width="50px">4</td>
+				<td width="150px">ios::out</td>
+				<td width="450px">Open a file for writing.</td>
+			</tr>
+			<tr>
+				<td width="50px">5</td>
+				<td width="150px">ios::trunc</td>
+				<td width="450px">If the file already exists, its contents will be truncated before opening the file.</td>
+			</tr>
+		</table>
+		<p>All these flags can be combined using the bitwise  operator OR (|). For example, if we want to open the file example.bin in binary  mode to add data we could do it by the following call to member function  open(): </p>
+		<p>fstream file; <br>
+    		file.open ("example.bin",  ios::out | ios::app | ios::binary); 
+    	</p>
+    	<h3>Closing File</h3>
+    	<p>&nbsp;&nbsp; outFile.close();<br>
+ 			 &nbsp;&nbsp; inFile.close();
+ 		</p>
+ 		<h3>Input Output Operation</h3>
+ 		<p><strong>put() and get() function</strong><br>
+  			the function put() writes a single character to the  associated stream. Similarly, the function get() reads a single character form  the associated stream.<br>
+ 			 example :<br>
+ 			 file.get(ch);<br>
+ 			 file.put(ch);
+  		</p>
+  		<p><em><strong></strong></em><strong>write() and read() function</strong><br>
+  			write() and read() functions write and read blocks  of binary data.<br>
+  			<strong>example:</strong><br>
+  			file.read((char *)&amp;obj,  sizeof(obj));<br>
+  			file.write((char *)&amp;obj,  sizeof(obj));
+  		</p>
+  		
+		<hr>
+		<div style="float: right;">
+			<button id="nextbutton" onclick="javascript: window.open('Ehandling.html','_self');" onmouseover="this.style.color='black';" onmouseout="this.style.color='#3399FF';" >
+				<b>Next  &rArr;</b>
+			</button> 
+		</div>	
+		<div style="float: right; margin-right: 12%;">
+			<button id="printpreview" onclick="javascript: window.open('Filehandling.html');" onmouseover="this.style.color='black';" onmouseout="this.style.color='#3399FF';" >
+				<b>Print Preview</b>
+			</button> 
+		</div>
+		<div style="float: left;">
+			<button id="nextbutton" onclick="javascript: window.open('Overloading.html','_self');" onmouseover="this.style.color='black';" onmouseout="this.style.color='#3399FF';" >
+				<b>&lArr;  Previous</b>
+			</button> 
+		</div>
+	</div>
+</body>
+</html>

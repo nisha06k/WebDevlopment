@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="ISO-8859-1">
+	<link href="Programs/CP.css" rel="stylesheet" type="text/css"  >
+	<title>C/C-Tutorial/Basic Syntax</title>
+	<script type="text/javascript" src="C.js"></script>
+</head>
+
+<body>
+	<div id="matter"> 
+		<h1>
+			BASIC SYNTAX OF 'C'
+		</h1>
+		<hr>
+		<h2>
+			Input Output Functions :
+		</h2>
+		<p>
+			C programming language provides many of the built-in function to write data. Commonly used I/O functions in C are <b>"printf()"</b> and <b>"scanf()"</b> functions which are present in <b>stdio.h</b> header file. We have to include 'stdio.h' file as shown in below C program to make use of these printf() and scanf() library functions. Lets study both of them in detail.
+		</p>
+		<h3>printf() & scanf() :</h3>
+		<p>
+			printf() function is used to print all data types values (Will see in coming slides.) onto the output screen. It returns the number of character printed by it. scanf() function is used to read character, string, numeric data from keyboard and it returns the number of character read by it.
+		</p>	
+		<h4 style="font-size: 6mm; margin-bottom: 0px;text-decoration: underline;"><i>NOTE:</i></h4>
+		<p style="margin-top: 3px;">
+			C language is case sensitive. For example, printf() and scanf() are different from Printf() and Scanf(). All characters in printf() and scanf() functions must be in lower case.
+		</p>
+		<h2>Sample Program :</h2>
+		<div  class="code">
+			<img id="code" src="Programs/CBasicSyntax1.jpg" >
+		</div>
+		<h3>Sample Output :</h3>
+		<pre>
+		Enter any Number <i>5</i>
+		Entered Number is 5
+		</pre>
+		<h4>
+			Click <a href="Programs/CBasicSyntax.c" download="CBasicSyntax.C"> Download</a> for source code.
+		</h4>	
+		<hr>
+		<h2>Comments in 'C':</h2>
+		<p>
+			In the C Programming Language, you can place comments in your code that are not executed as part of the program. A comment starts with /* symbol and ends with */ and can be anywhere in your program. Comments can span several lines within your C program.
+		</p>
+		<table id="tab1">
+			<thead>
+				<tr>
+					<th width="50px">S.No</th>
+					<th width="250px" >Name</th>
+					<th width="450px">Syntax</th>
+				</tr>
+			</thead>
+			<tr>
+				<td width="50px">1</td>
+				<td width="250px">Single Line Comment</td>
+				<td width="450px"><pre>// comment goes here 
+	(or)
+ /* Am E-Learning */</pre></td>
+			</tr>
+			<tr>
+				<td width="50px">2</td>
+				<td width="250px">Multiple Line Comment</td>
+				<td width="450px"><pre>/*
+ * Author: Am E-Learning
+ * Purpose: Multiple Line Comment.
+ * Language:  C
+ */</pre> </td>
+			</tr>
+			<tr>
+				<td width="50px">3</td>
+				<td width="250px">Comment at the end of line</td>
+				<td width="450px"><pre>clrscr();// It is used to clear screen. 
+		(or) 
+clrscr();/* Am E-Learning */</pre></td>
+			</tr>
+		</table>
+		<br>
+		<hr>
+		<h2>
+			Rules Of Syntax In 'C'
+		</h2>
+		<ul style="list-style-image: url('sideimg.jpg');">
+			<li>C language is case sensitive.</li>
+			<li>Every statement ends with semicolon (;).</li>
+			<li>Variables should be defined after main function opening bracket. </li>
+			<li>The statements in program must be written in sequencial order to get desired output.Unless any logic problem can be arise.</li>
+			<li>In separate statement each instruction should be written. Therefore , complete C program consist of set of instructions.</li>
+			<li>Whitespace is required between identifiers and keywords.</li>
+		</ul>
+		<hr>
+		<div style="float: right;">
+			<button id="nextbutton" onclick="javascript: window.open('CDT&V.html','_self');" onmouseover="this.style.color='black';" onmouseout="this.style.color='#3399FF';" >
+				<b>Next  &rArr;</b>
+			</button> 
+		</div>	
+		<div style="float: right; margin-right: 12%;">
+			<button id="printpreview" onclick="javascript: window.open('CBasicSyntax.html');" onmouseover="this.style.color='black';" onmouseout="this.style.color='#3399FF';" >
+				<b>Print Preview</b>
+			</button> 
+		</div>
+		<div style="float: left;">
+			<button id="nextbutton" onclick="javascript: window.open('CHelloWorld.html','_self');" onmouseover="this.style.color='black';" onmouseout="this.style.color='#3399FF';" >
+				<b>&lArr;  Previous</b>
+			</button> 
+		</div>
+	</div>
+</body>
+</html>

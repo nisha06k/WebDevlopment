@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="ISO-8859-1">
+	<link href="Programs/CPP.css" rel="stylesheet" type="text/css"  >
+	<title>CPP/CPP-Tutorial/Operator Overloading</title>
+	<script type="text/javascript" src="Cpp.js"></script>
+</head>
+<body>
+	<div id="matter"> 
+		<h1>
+			OPERATOR OVERLOADING
+		</h1>
+		<hr>
+		<p>
+			Overloading means assigning different meanings to an operation, depending on the context. C++ allows overloading of operators, thus allowing us to assign multiple meaning to an operator. Overloaded operators are functions with special names the keyword operator followed by the symbol for the operator being defined. Like any other function, an overloaded operator has a return type and a parameter list.
+		</p>
+		<h3>Defining:</h3>
+		<code>Return type classname:: Operator OperatorSymbol(arglist)<br>{<br>  Body;<br>}</code>
+		<h3>Implementation:</h3>
+			Operator function must be either member functions or friend functions.
+		<h3>Restriction:</h3>
+		<ul style="list-style-image: url('sideimg.jpg'); text-align:  justify;">
+			
+			<li>
+				Precedence and associativity of an operator should not change.			 
+			</li>
+			<li>
+				New operators cannot be created.			 
+			</li>
+			<li>
+				We cannot change the basic meaning of an operator. '+' cannot be used for     subtraction.			 
+			</li>
+			<li>
+				Overloaded operators follow the rules of original operators.			 
+			</li>
+		</ul>
+		<hr>
+		<div style="float: right;">
+			<button id="nextbutton" onclick="javascript: window.open('Filehandling.html','_self');" onmouseover="this.style.color='black';" onmouseout="this.style.color='#3399FF';" >
+				<b>Next  &rArr;</b>
+			</button> 
+		</div>	
+		<div style="float: right; margin-right: 12%;">
+			<button id="printpreview" onclick="javascript: window.open('Overloading.html');" onmouseover="this.style.color='black';" onmouseout="this.style.color='#3399FF';" >
+				<b>Print Preview</b>
+			</button> 
+		</div>
+		<div style="float: left;">
+			<button id="nextbutton" onclick="javascript: window.open('Polymorphism.html','_self');" onmouseover="this.style.color='black';" onmouseout="this.style.color='#3399FF';" >
+				<b>&lArr;  Previous</b>
+			</button> 
+		</div>
+	</div>
+</body>
+</html>

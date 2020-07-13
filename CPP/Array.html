@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="ISO-8859-1">
+	<link href="Programs/CPP.css" rel="stylesheet" type="text/css"  >
+	<title>CPP/CPP-Tutorial/Arrays</title>
+	<script type="text/javascript" src="Cpp.js"></script>
+</head>
+<body>
+	<div id="matter"> 
+		<h1>
+			Arrays in "C++"
+		</h1>
+		<hr>
+		<p style="text-align:  justify;">
+			An array is a collection of variables of the same type that are referenced by a common name. All arrays consist of contiguous memory locations. The lowest address corresponds to the first element and the highest address to the last element.		</p>
+		<br>		
+		<h2>Declaration of Array</h2>
+		<p style="text-align:  justify;">
+			To declare an array in C++, the programmer specifies the type of the elements and the number of elements required by an array as follows:
+			<br>type arrayName [ arraySize ];
+			<br>This is called a single-dimension array. The arraySize must be an integer constant greater than zero and type can be any valid C++ data type. For example, to declare a 10-element array called balance of type integer, use this statement:
+			<br>int balance[10];
+		</p>
+		<h2>Initializing an Array</h2>
+		<p  style="text-align:  justify;">
+			You can initialize C++ array elements either one by one or using a single statement as follows:
+			<br>double amount[5] = {1000.0, 2.0, 3.4, 17.0, 50.0};
+			<br>The number of values between braces { } can not be larger than the number of elements that we declare for the array between square brackets [ ]. Following is an example to assign a single element of the array:
+			<br>If you omit the size of the array, an array just big enough to hold the initialization is created. Therefore, if you write:
+			<br>double amount[] = {1000.0, 2.0, 3.4, 17.0, 50.0};
+			<br>There are following few important concepts, which should be clear to a C++ programmer:
+		</p>
+		<table id="tab1">
+			<thead>
+				<tr>
+					<th width="50px">S.No</th>
+					<th width="200px">Concept</th>
+					<th width="400px" >Description</th>
+				</tr>
+			</thead>
+			<tr>
+				<td>1</td>
+				<td>Multi-dimensional arrays</td>
+				<td>C++ supports multidimensional arrays. The simplest form of the multidimensional array is the two-dimensional array.</td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>Pointer to an array</td>
+				<td>You can generate a pointer to the first element of an array by simply specifying the array name, without any index.</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>Passing arrays to functions</td>
+				<td>You can pass to the function a pointer to an array by specifying the array's name without an index.</td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td>Return array from functions</td>
+				<td>C++ allows a function to return an array.</td>
+			</tr>
+		</table>
+		<hr>
+		<div style="float: right;">
+			<button id="nextbutton" onclick="javascript: window.open('Strings.html','_self');" onmouseover="this.style.color='black';" onmouseout="this.style.color='#3399FF';" >
+				<b>Next  &rArr;</b>
+			</button> 
+		</div>	
+		<div style="float: right; margin-right: 12%;">
+			<button id="printpreview" onclick="javascript: window.open('Array.html');" onmouseover="this.style.color='black';" onmouseout="this.style.color='#3399FF';" >
+				<b>Print Preview</b>
+			</button> 
+		</div>
+		<div style="float: left;">
+			<button id="nextbutton" onclick="javascript: window.open('Function.html','_self');" onmouseover="this.style.color='black';" onmouseout="this.style.color='#3399FF';" >
+				<b>&lArr;  Previous</b>
+			</button> 
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="ISO-8859-1">
+	<link href="Programs/CPP.css" rel="stylesheet" type="text/css"  >
+	<title>CPP/CPP-Tutorial/Error Handling</title>
+	<script type="text/javascript" src="Cpp.js"></script>
+</head>
+<body>
+	<div id="matter"> 
+		<h1>
+			ERROR HANDLING
+		</h1>
+		<hr>
+		<p>An exception is a problem that arises during the execution of a program. A C++ exception is a response to an exceptional circumstance that arises while a program is running, such as an attempt to divide by zero.</p>
+		<p>Exceptions provide a way to transfer control from one part of a program to another. C++ exception handling is built upon three keywords: <b>try, catch,</b> and <b>throw</b>.</p>
+		<ul >
+			<li><p><b>throw:</b> A program throws an exception when a problem shows up. This is done using a <b>throw</b> keyword.</p></li>
+			<li><p><b>catch:</b> A program catches an exception with an exception handler at the place in a program where you want to handle the problem. The <b>catch</b> keyword indicates the catching of an exception.</p></li>
+			<li><p><b>try:</b> A <b>try</b> block identifies a block of code for which particular exceptions will be activated. It's followed by one or more catch blocks.</p></li>
+		</ul>
+		<p>
+			Assuming a block will raise an exception, a method catches an exception using a combination of the <b>try</b> and <b>catch</b> keywords. A try/catch block is placed around the code that might generate an
+			exception. Code within a try/catch block is referred to as protected code, and the syntax for using try/catch looks like the following:
+		</p>
+		<pre>
+		try
+		{
+ 		  // protected code
+		}catch( ExceptionName e1 )
+		{
+ 		  // catch block
+		}catch( ExceptionName e2 )
+		{
+		   // catch block
+		}catch( ExceptionName eN )
+		{
+		   // catch block
+		}
+		</pre>
+		
+		<hr>
+		<div style="float: right;">
+			<button id="nextbutton" onclick="javascript: window.open('Template.html','_self');" onmouseover="this.style.color='black';" onmouseout="this.style.color='#3399FF';" >
+				<b>Next  &rArr;</b>
+			</button> 
+		</div>	
+		<div style="float: right; margin-right: 12%;">
+			<button id="printpreview" onclick="javascript: window.open('Ehandling.html');" onmouseover="this.style.color='black';" onmouseout="this.style.color='#3399FF';" >
+				<b>Print Preview</b>
+			</button> 
+		</div>
+		<div style="float: left;">
+			<button id="nextbutton" onclick="javascript: window.open('Filehandling.html','_self');" onmouseover="this.style.color='black';" onmouseout="this.style.color='#3399FF';" >
+				<b>&lArr;  Previous</b>
+			</button> 
+		</div>
+	</div>
+</body>
+</html>

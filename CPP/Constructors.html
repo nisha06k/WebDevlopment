@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="ISO-8859-1">
+	<link href="Programs/CPP.css" rel="stylesheet" type="text/css"  >
+	<title>CPP/CPP-Tutorial/Constructors</title>
+	<script type="text/javascript" src="Cpp.js"></script>
+</head>
+<body>
+	<div id="matter"> 
+		<h1>
+			CONSTRUCTORS
+		</h1>
+		<hr>
+		<p>
+			It is a member function having same  name as it's class and which is used to initialize the objects of that class  type with a legel initial value. Constructor is automatically called when  object is created.
+		</p>
+		<h2>Type of Constructor</h2>
+		<p><strong>Default  Constructor-</strong>: A  constructor that accepts no parameters is known as default constructor. If no  constructor is defined then the compiler supplies a default constructor.</p>
+		<pre>Circle<span > ::</span> Circle<span >()
+		{</span>
+		    radius<span > =</span><span > 0</span><span> ;
+		}
+		</span></pre>
+		<p><strong>Parameterized  Constructor -</strong>: A  constructor that receives arguments/parameters, is called parameterized  constructor.</p>
+		<pre>Circle<span > ::</span> Circle<span >(</span><span >double</span> r<span >)
+		{</span>
+		    radius<span > =</span> r<span  >; 
+		}</span>
+		</pre>
+		<p>
+			<strong>Copy  Constructor-</strong>: A  constructor that initializes an object using values of another object passed to  it as parameter, is called copy constructor. It creates the copy of the passed  object.<br>
+   		</p>
+   		<pre>Circle<span > ::</span> Circle<span  >(</span>Circle<span  > &amp;</span>t<span  >)
+			{</span>
+			    radius<span > =</span> t<span  >.</span>radius<span  >; 
+			}</span>
+
+		</pre>
+		<h2>Destructor</h2>
+		<p>A destructor is a member function  having sane name as that of its class preceded by ~(tilde) sign and which is  used to destroy the objects that have been created by a constructor. It gets  invoked when an object's scope is over.</p>
+		<pre><span> </span>Circle<span >() {}</span>
+</pre>
+		<hr>
+		<div style="float: right;">
+			<button id="nextbutton" onclick="javascript: window.open('Inheritance.html','_self');" onmouseover="this.style.color='black';" onmouseout="this.style.color='#3399FF';" >
+				<b>Next  &rArr;</b>
+			</button> 
+		</div>	
+		<div style="float: right; margin-right: 12%;">
+			<button id="printpreview" onclick="javascript: window.open('Constructors.html');" onmouseover="this.style.color='black';" onmouseout="this.style.color='#3399FF';" >
+				<b>Print Preview</b>
+			</button> 
+		</div>
+		<div style="float: left;">
+			<button id="nextbutton" onclick="javascript: window.open('Class.html','_self');" onmouseover="this.style.color='black';" onmouseout="this.style.color='#3399FF';" >
+				<b>&lArr;  Previous</b>
+			</button> 
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="ISO-8859-1">
+	<link href="Programs/CPP.css" rel="stylesheet" type="text/css"  >
+	<title>CPP/CPP-Tutorial/Data Types and Variables</title>
+	<script type="text/javascript" src="Cpp.js"></script>
+</head>
+
+<body>
+	<div id="matter"> 
+		<h1>
+			DATA TYPES AND VARIABLES
+		</h1>
+		<hr>
+		<h2>
+			Data Types
+		</h2>
+		<p>
+			In C++ programming language there are many predefined set of data types. They are used for declaring variables or functions of different types and they are defined as the data storage format that a variable can store a data to perform a specific operation. 
+		</p>
+		<p>
+			So mainly they are divided into two types they are <br><b>1.Fundamental data type or built in type</b> <br><b>2.Derived data type</b> 
+		</p>
+		<h2>Fundamental data type or built in type </h2>
+		<table id="tab1">
+			<thead>
+				<tr>
+					<th width="50px">S.No</th>
+					<th width="200px">Built in type</th>
+					<th width="100px" >Size (bytes)</th>
+					<th width="150px" >Example</th>
+					<th width="150px">Range</th>
+				</tr>
+			</thead>
+			<tr>
+				<td>1</td>
+				<td>char</td>
+				<td>1</td>
+				<td>char a='A';</td>
+				<td>-127 to 127</td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>int</td>
+				<td>2</td>
+				<td>int i=0;</td>
+				<td>-32,767 to 32,767</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>float(upto 7    digits precision)</td>
+				<td>4</td>
+				<td>Float a=2.56;</td>
+				<td>3.4x10^-38 to (3.4x10^38) -1</td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td>double(upto 15 digits of precision)</td>
+				<td>8</td>
+				<td>Double  a= 5e^-4;</td>
+				<td>1.7x10^-308 to (1.7x10^308) - 1</td>
+			</tr>
+		</table>
+		<br>
+		<h2>Derived Data Type </h2>
+		<p>
+		Following are the types of derived data types
+		</p>
+		<ul style="list-style-image: url('sideimg.jpg');">
+			<li>Arrays</li>
+			<li>Functions</li>
+			<li>Pointers</li>
+			<li>References.</li>
+			<li>Constants</li>	
+			<li>Class</li>
+			<li>Structure</li>
+			<li>Union</li>
+			<li>Enumeration</li>			
+		</ul>
+		<hr>
+		<h2>Variables</h2>
+		<p>
+Variables represent named storage locations, whose values can be manipulated during program run. Variable is the name of memory allocated by the compiler depending on the data type.
+<br><b>Declaration of variables</b>
+The declaration of variable takes place in the following manner: type name.
+Where type is any C++ data type and name is the name of the variable. A variable must be declared before its use.
+ <br><b>For Example:</b><br> int I; char a; float p. Here int is a data type and I is the name of the variable.
+<br><b>Initialization of Variables</b>
+Initialization means assigning value to the already declared variables. It can be done either with declaration or after declaration.
+<br><b>For Example:</b><br> float a=2.456;//at declaration
+Float a;
+a=2.456;// after declaration 
+		</p>
+		<h3>Scope Of Variables</h3>
+		<p>
+			A scope is a region of the program and broadly speaking there are three places, where variables can be declared:
+		</p>
+		<ul style="list-style-image: url('sideimg.jpg');">
+			<li>Inside a function or a block which is called local variables</li>
+			<li>In the definition of function parameters which is called formal parameters.</li>
+			<li>Outside of all functions which is called global variables.</li>	
+		</ul>
+		<br>
+		<hr>
+		<div style="float: right;">
+			<button id="nextbutton" onclick="javascript: window.open('Operators.html','_self');" onmouseover="this.style.color='black';" onmouseout="this.style.color='#3399FF';" >
+				<b>Next  &rArr;</b>
+			</button> 
+		</div>	
+		<div style="float: right; margin-right: 12%;">
+			<button id="printpreview" onclick="javascript: window.open('DT&V.html.html');" onmouseover="this.style.color='black';" onmouseout="this.style.color='#3399FF';" >
+				<b>Print Preview</b>
+			</button> 
+		</div>
+		<div style="float: left;">
+			<button id="nextbutton" onclick="javascript: window.open('HelloWorld.html','_self');" onmouseover="this.style.color='black';" onmouseout="this.style.color='#3399FF';" >
+				<b>&lArr;  Previous</b>
+			</button> 
+		</div>
+	</div>
+</body>
+</html>

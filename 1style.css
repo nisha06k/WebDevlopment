@@ -1,0 +1,23 @@
+*
+{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-image: url(b.jpg);
+	background-size: 100% 700px;
+}
+h2{
+	text-align: center;
+	padding: 20px;
+}
+.a{
+	background: #2d85b0;
+	width: 500px;
+	margin: 0px 0px 0px 430px;
+	color: white;
+	font-size: 18px;
+}
+#b{
+	margin-left: 170px;
+}
